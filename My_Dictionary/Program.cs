@@ -8,35 +8,21 @@ namespace My_Dictionary
         static void Main(string[] args)
         {
 
-            Dictionary<int, string> idUser = new Dictionary<int, string>();
+            MyDictionary<int, string> idUser = new MyDictionary<int, string>();
             idUser.Add(1, "Muhammed Fidan");
             idUser.Add(2, "Sibel Cakir");
             idUser.Add(3, "Engin Demirog");
 
-            List();
+            idUser.Listele();
 
-            Count();
-
-            idUser.Remove(2); //silme islemi yapar.
-
-            List();
-
-            Count();
+           
 
 
-            void List()
-            {
-                foreach (var users in idUser)
-                {
-                    Console.WriteLine(Environment.NewLine + users);
-                }
-            }
-            Console.ReadLine();
 
-            void Count()
-            {
-                Console.Write("Eleman sayisi:" + idUser.Count + Environment.NewLine);
-            }
+
+            
+
+           
         }
 
 
